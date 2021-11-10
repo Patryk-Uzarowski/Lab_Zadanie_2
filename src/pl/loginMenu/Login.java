@@ -59,7 +59,6 @@ public class Login extends JFrame implements ActionListener {
      */
     private void setPanels() {
         JPanel helloPanel = new JPanel();
-        helloPanel = new JPanel();
         helloPanel.setBounds(0, 0, 250, 100);
         helloPanel.setBackground(Color.blue);
         helloPanel.setLayout(new BorderLayout());
@@ -77,6 +76,7 @@ public class Login extends JFrame implements ActionListener {
 
         interfacePanel = new JPanel();
         interfacePanel.setBounds(0, 130, 250, 270);
+        interfacePanel.setBackground(Color.white);
         interfacePanel.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 5));
         this.add(interfacePanel);
     }

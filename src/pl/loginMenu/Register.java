@@ -54,6 +54,7 @@ public class Register extends JFrame implements ActionListener {
 
         interfaceRegisterPanel = new JPanel();
         interfaceRegisterPanel.setBounds(0,30,400,120);
+        interfaceRegisterPanel.setBackground(Color.white);
         interfaceRegisterPanel.setLayout(new FlowLayout(FlowLayout.CENTER,10,5));
 
         add(helloRegisterPanel);
@@ -120,7 +121,6 @@ public class Register extends JFrame implements ActionListener {
         String regUser = registerUsername.getText();
         char [] regPassword1 = registerPassword.getPassword();
         String regPassword = new String(regPassword1);
-        System.out.println("Haslo: "+regPassword);
         int answer = Database.registerUser(regUser,regPassword);
         if(answer==0) {
             JOptionPane.showMessageDialog(this,"Username and password can't be empty!","",JOptionPane.WARNING_MESSAGE);
