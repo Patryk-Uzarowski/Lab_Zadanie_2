@@ -11,15 +11,15 @@ import java.awt.event.ActionListener;
  */
 
 public class Register extends JFrame implements ActionListener {
-    JButton rbutton1;
-    JButton rbutton2;
-    JPanel helloRegisterPanel;
-    JPanel interfaceRegisterPanel;
-    JLabel helloRegisterLabel;
-    JTextField registerUsername;
-    JPasswordField registerPassword;
+    private JButton rbutton1;
+    private JButton rbutton2;
+    private JPanel helloRegisterPanel;
+    private JPanel interfaceRegisterPanel;
+    private JLabel helloRegisterLabel;
+    private JTextField registerUsername;
+    private JPasswordField registerPassword;
 
-    JFrame parent;
+    private JFrame parent;
 
     /*
     * Konstruktor klasy Register odpowiada za stworzenie JFrame nowego okna.
