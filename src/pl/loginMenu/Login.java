@@ -180,6 +180,7 @@ public class Login extends JFrame implements ActionListener {
     void newWindow() {
         setVisible(false);
         new Register(this);
+        hardReset();
     }
 
     @Override
